@@ -1,9 +1,17 @@
 # ghoshtrina.com
-My Website
 
-This project contains all the necessary files for my Portfolio Website. 
-The main code is in index.html.
+My personal portfolio website. The main page is `index.html` — a static site
+built on a Bootstrap template (no build step).
 
-I used a Bootstrap template to build the website. I hosted the website using AWS S3's static website hosting functionality, along with AWS Route 53's DNS. 
+## Hosting & deployment
 
-The website can be visited at: http://ghoshtrina.com
+Hosted on **Cloudflare Pages**, which auto-deploys from this repository's `main`
+branch. Custom domain **ghoshtrina.com**, served over **HTTPS** via Cloudflare;
+DNS is managed by Cloudflare (the domain is registered with Amazon Registrar).
+
+Every push to `main` publishes a new production build; pushes to other branches
+get their own preview URL.
+
+## Visit
+
+https://ghoshtrina.com
