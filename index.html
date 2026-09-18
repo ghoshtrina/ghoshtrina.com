@@ -529,10 +529,11 @@
               <p><em>Amazon, Seattle, WA</em></p>
               <p>
                 <ul>
-                  <li>Own SKU-grain data products on an org-wide data lake end to end &mdash; hardening fragile pipelines into documented, IaC-managed ones, then productionizing them with idempotent, date-partitioned loads that backfill safely and reconcile byte-identical to source (770K+ rows, consumed cross-org).</li>
-                  <li>Rebuilt a revenue-loss metric at a finer grain end to end (SQL &rarr; scheduled batch-ETL &rarr; dashboard); root-caused a join-driven row fan-out (27.5% overstatement) and cut transform runtime 71 &rarr; 13 min &mdash; now a metric leadership steers by.</li>
-                  <li>Lead a campaign to replace bespoke per-metric ETL jobs with consolidated, CI/CD-shipped "data products" any team can subscribe to; built a clone-to-onboard CDK package and an MCP server connecting engineers' IDE agents to Redshift.</li>
-                  <li>Built a metadata-driven ingestion pipeline (S3 &rarr; Glue crawler &rarr; Lambda &rarr; data lake &rarr; programmatic dashboards), cutting per-dashboard build from ~1 week to a few hours.</li>
+                  <li>Build and own production data products end to end on a large data lake &mdash; hardening fragile pipelines into documented, infrastructure-as-code ones, then productionizing them with idempotent, incrementally-loaded models that backfill safely and reconcile to source.</li>
+                  <li>Rebuild reporting and metric pipelines at the right grain (SQL &rarr; scheduled ETL &rarr; dashboards), root-causing data-integrity issues and tuning transforms for significant performance gains.</li>
+                  <li>Lead an effort to standardize how teams build and ship data products &mdash; consolidating bespoke pipelines into reusable, CI/CD-delivered datasets, with tooling (including an MCP server) that connects engineers' AI/IDE agents directly to the warehouse.</li>
+                  <li>Build metadata-driven ingestion pipelines on AWS (S3, Glue, Lambda) that automate dashboard and dataset delivery and remove substantial manual effort.</li>
+                  <li>Apply a governance-first approach to sensitive data: least-privilege access, access controls, and data-integrity checks.</li>
                   <li>Tools &amp; technologies: SQL, Python, Amazon Redshift, S3, Glue, Lambda, AWS CDK; dbt, Airflow, DuckDB (personal projects).</li>
                 </ul>
               </p>
