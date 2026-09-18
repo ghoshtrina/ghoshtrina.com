@@ -1,0 +1,12 @@
+# macOS / Windows / editor junk
+.DS_Store
+**/.DS_Store
+Thumbs.db
+desktop.ini
+
+# R
+.Rhistory
+.Rapp.history
+
+# Node (if ever added)
+node_modules/
